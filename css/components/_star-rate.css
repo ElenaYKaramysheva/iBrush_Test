@@ -1,0 +1,16 @@
+.star-rate__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.star-rate__value {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-right: 0.5rem;
+}
+
+.star-rate__group-icon {
+    display: flex;
+    gap: 0.25rem;
+}

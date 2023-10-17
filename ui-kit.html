@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путь JavaScript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Это временные стили -->
+  <style>
+    body > div { margin: 50px auto; max-width: 1420px; padding: 0 30px; }
+  </style>
+</head>
+<body>
+    <div>
+        
+        <h1 class="title title--large">Путь JavaScript</h1>
+        <h2 class="title title--small">Серверный JavaScript</h2>
+        <h3 class="title title--medium">Что вы думаете об этой книге?</h3>
+        <h4 class="title title--smallest">События жизненного цикла ReactJS</h4>
+
+        <button class="button">Начать учиться</button>
+        <button class="button">Отправить</button>
+
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+              <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+          </symbol>
+        </svg>
+        <div class="star-rate" aria-label="Рейтинг 4 из 5">
+          <p class="star-rate__value">4</p>
+          <svg class="star-rate__icon icon-star icon-star--active">
+            <use xlink:href="#star"></use>
+          </svg>
+          <svg class="star-rate__icon icon-star icon-star--active">
+            <use xlink:href="#star"></use>
+          </svg>
+          <svg class="star-rate__icon icon-star icon-star--active">
+            <use xlink:href="#star"></use>
+          </svg>
+          <svg class="star-rate__icon icon-star icon-star--active">
+            <use xlink:href="#star"></use>
+          </svg>
+          <svg class="star-rate__icon icon-star">
+            <use xlink:href="#star"></use>
+          </svg>
+        </div>
+
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Статьи
+              <svg class="site-menu__dropdown" width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.5L4 4.5L7 1.5" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Курсы
+              <svg class="site-menu__dropdown" width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.5L4 4.5L7 1.5" stroke-width="1.5"/>
+              </svg>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">JavaScript Pro</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">JavaScript для новчиков</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">JavaScript ниндзя</a></li>
+            </ul>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Новости</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">О нас</a>
+          </li>
+        </ul> <br><br><br><br><br><br><br><br><br>
+
+        <form class="form" action="#">
+          <input class="form__field input" type="text" name="username" placeholder="Имя">
+          <input class="form__field input" type="text" name="mail" placeholder="Email">
+          <div class="list-select__wrapper">
+            <select class="form__select list-select input input--select" name="book" id="book">
+              <option class="list-select__name" value="Выберите книгу">Выберите книгу</option>
+              <option class="list-select__item" value="JavaScript ниндзя">JavaScript ниндзя</option>
+              <option class="list-select__item" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
+              <option class="list-select__item" value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
+              <option class="list-select__item" value="Выразительный JavaScript">Выразительный JavaScript</option>
+            </select>
+          </div>
+          <textarea class="form__review input input--textarea" name="user-review" id="review" placeholder="Ваш отзыв">
+          </textarea>
+        </form>
+
+        <article class="technology-post">
+          <img 
+            class="technology-post__photo" 
+            src="/img/img_react_technology.png" 
+            alt="Эмблема React - библиотеки JavaScript"
+          >
+          <p class="technology-post__date">12 декабря</p>
+          <h4 class="technology-post__title title title--smallest">События жизненного <br> цикла ReactJS</h4>
+        </article>
+        <article class="technology-post">
+          <img 
+            class="technology-post__photo" 
+            src="/img/img_css_grid_technology.png" 
+            alt="Эмблема CSS Grids"
+          >
+          <p class="technology-post__date">10 декабря</p>
+          <h4 class="technology-post__title title title--smallest">CSS Grids. Полное руководство</h4>
+        </article>
+        <article class="technology-post">
+          <img 
+            class="technology-post__photo" 
+            src="./img/img_js_technology.png" 
+            alt="Эмблема языка программирования JavaScript"
+          >
+          <p class="technology-post__date">5 декабря</p>
+          <h4 class="technology-post__title title title--smallest">Асинхронность <br> в JavaScript</h4>
+        </article>
+
+        <br>
+
+        <blockquote class="review">
+          <p class="review__text text-large">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.</p>
+          <cite class="review__name">Р. Мартин</cite>
+        </blockquote>
+
+
+    </div>
+</body>
+</html>

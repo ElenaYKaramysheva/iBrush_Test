@@ -1,0 +1,39 @@
+.list-select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.list-select__wrapper {
+    display: block;
+    max-width: 14.875rem;
+    position: relative;
+}
+
+.list-select__wrapper::after {
+    position: absolute;
+    content: '';
+    background-image: url('/img/icon_dropdown_form.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0.5625rem;
+    height: 0.25rem;
+    right: 1.0625rem;
+    top: 1.5625rem;
+    pointer-events: none;
+}
+
+.list-select__name{
+    display: none;
+}
+
+.list-select__item {
+    color: var(--text-color-primary);
+}
+
+.list-select__item:hover {
+    background-color: var(--bg-color-primary);
+}
+

@@ -1,0 +1,9 @@
+.icon-star {
+    width: 1.6875rem;
+    height: 1.6875rem;
+    fill: var(--bg-color-star-inactive);
+}
+
+.icon-star--active {
+    fill: var(--bg-color-star-active);
+}

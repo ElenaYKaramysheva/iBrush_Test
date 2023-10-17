@@ -1,0 +1,39 @@
+.section-banner {
+    padding-top: 3.75rem;
+    padding-bottom: 4.5625rem;
+    background-color: var(--bg-color-secondary);
+}
+
+.section-banner__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.section-banner__picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 305/123;
+    background-color: var(--bg-color-primary);
+    object-fit: cover;
+    margin-bottom: 0.8125rem;
+}
+
+.section-banner__text {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+}
+
+.section-banner__link {
+    color: var(--text-color-accent);
+    border-bottom: 1px solid var(--border-color-secondary);
+}
+
+@media (max-width: 767px) {
+    .section-banner {
+        padding-top: 1.25rem;
+        padding-bottom: 2.75rem;
+    }
+}

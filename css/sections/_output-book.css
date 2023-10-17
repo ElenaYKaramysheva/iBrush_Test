@@ -1,0 +1,10 @@
+.section-output-book__title {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .section-output-book {
+        padding-top: 1.875rem;
+        padding-bottom: 3.125rem;
+    }
+}

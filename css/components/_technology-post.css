@@ -1,0 +1,26 @@
+.technology-post__photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: block;
+    background: var(--bg-color-accent);
+    border-radius: 1.125rem;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+}
+
+.technology-post__date {
+    font-size: 0.75rem;
+    color: var(--text-color-secondary);
+    line-height: 1rem;
+    letter-spacing: 0.02;
+    margin-bottom: 0.4375rem;
+}
+
+.technology-post__title {
+    max-width: 14.125rem;
+    margin-bottom: 0.4375rem;
+}
+
+
+

@@ -1,0 +1,22 @@
+:root {
+    --bg-color-primary: #F1F1F3;
+    --bg-color-secondary: #E1E1E1;
+    --bg-color-accent: #2D1AA7;
+    --bg-color-form: #FFFFFF; 
+
+    --bg-color-star-inactive: #D7D7E2;
+    --bg-color-star-active: #FFB400;
+    --bg-color-bullet: #979797;
+
+    --text-color-primary: #202326;
+    --text-color-secondary: #777777;
+    --text-color-accent: var(--bg-color-accent); 
+    --text-color-form: #777777;
+
+    --text-color-inverted: #FFFFFF;
+
+    --border-color-primary: #ECECF3;
+    --border-color-secondary: var(--bg-color-accent);
+    
+    --font-primary: 'Onest', sans-serif;
+}

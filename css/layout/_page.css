@@ -1,0 +1,17 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.page__content {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 48.625rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1.25rem;
+}
