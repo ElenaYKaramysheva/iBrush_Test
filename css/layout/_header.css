@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.header__button {
+    position: relative;
+}
+
 @media (min-width: 768px) {
     .header__menu {
         display: flex;
@@ -59,7 +63,7 @@
 }
 
 /*===========================
-           Header
+           Burger
 ===========================*/
 
 .burger {

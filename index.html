@@ -48,7 +48,27 @@
                   <a class="site-menu__link" href="#">О нас</a>
                 </li>
               </ul>
-              <button class="header__button button" type="button">Начать учиться</button>
+              <button id="button-popup" class="header__button button" type="button">Начать учиться</button>
+              
+                <div class="popup-wrapper">
+                  <div id="form-popup" class="popup">
+                    <div class="popup__header">
+                      <h1 class="popup__title title title--small">Начать учиться</h1>
+                      <img class="popup__close" src="./img/icon_close_popup.svg" alt="Закрыть попап">
+                    </div>
+                    <div class="popup__content">
+                      <p class="popup__text">Оставьте заявку и наш менеджер вам перезвонит.</p>
+                      <input class="popup__input-name input" type="text" name="username" placeholder="Как вас зовут">
+                      <input class="popup__input-mail input" type="text" name="mail" placeholder="Ваш email">
+                      <button class="popup__button button">Отправить</button>
+                    </div>
+                    <div class="popup__footer">
+                      <p class="popup__consent text-base">Нажимая кнопку «Отправить», вы соглашаетесь с 
+                        <a class="popup__link" href="#">политикой конфиденциальности</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
             </div>
             <button type="button" class="burger">
               <span></span>
@@ -138,14 +158,18 @@
                 <div class="form__wrapper">
                   <input class="form__field input" type="text" name="username" placeholder="Имя">
                   <input class="form__field input" type="text" name="mail" placeholder="Email">
-                  <div class="list-select__wrapper">
-                    <select class="form__select list-select input input--select" name="book" id="book">
-                      <option class="list-select__name" value="Выберите книгу">Выберите книгу</option>
-                      <option class="list-select__item" value="JavaScript ниндзя">JavaScript ниндзя</option>
-                      <option class="list-select__item" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
-                      <option class="list-select__item" value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
-                      <option class="list-select__item" value="Выразительный JavaScript">Выразительный JavaScript</option>
-                    </select>
+                  <div class="form__select list-select list-select-active" id="select-1">
+                    <!-- Кнопка для открытия выпадающего списка -->
+                    <button type="button" class="list-select__toggle" name="book" value="" data-select="toggle" data-index="-1">Выберите книгу</button>
+                    <!-- Выпадающий список -->
+                    <div class="list-select__dropdown">
+                      <ul class="list-select__options">
+                        <li class="list-select__option" data-select="option" data-value="JavaScript ninja" data-index="0">JavaScript ниндзя</li>
+                        <li class="list-select__option" data-select="option" data-value="Pragmatic Guide to JavaScript" data-index="1">Pragmatic Guide to JavaScript</li>
+                        <li class="list-select__option" data-select="option" data-value="Pro JavaScript Techniques" data-index="2">Pro JavaScript Techniques</li>
+                        <li class="list-select__option" data-select="option" data-value="JavaScript" data-index="3">Выразительный JavaScript</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <textarea class="form__review input input--textarea" name="user-review" id="review" placeholder="Ваш отзыв">

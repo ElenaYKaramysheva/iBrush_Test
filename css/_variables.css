@@ -8,6 +8,8 @@
     --bg-color-star-active: #FFB400;
     --bg-color-bullet: #979797;
 
+    --bg-color-popup: rgba(32, 35, 38, 0.7);
+   
     --text-color-primary: #202326;
     --text-color-secondary: #777777;
     --text-color-accent: var(--bg-color-accent); 
@@ -16,6 +18,7 @@
     --text-color-inverted: #FFFFFF;
 
     --border-color-primary: #ECECF3;
+    --border-color-popup: #EDEDF1;
     --border-color-secondary: var(--bg-color-accent);
     
     --font-primary: 'Onest', sans-serif;
